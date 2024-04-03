@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../assets/style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+            />
+        <link rel="stylesheet" href="assets/images/favicon.ico">
+        <title>Product - Simple Ecommerce</title>
+    </head>
+    <body>
+        <div class="facebook fa fa-brands fa-square-facebook"></div>
+        <div class="twitter fa fa-brands fa-square-twitter"></div>
+        <div class="whatsapp fa fa-brands fa-square-whatsapp" onclick="chat()"></div>
+        <header>
+            <ul class="nav-list animate__animated animate__backInDown">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">
+                        <span class="nav-icon fa fa-home"></span>
+                        <span class="nav-text">HOME</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <span class="nav-icon fa fa-cart-plus"></span>
+                        <span class="nav-text">PRODUCT</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="../category/index.html" class="nav-link">
+                        <span class="nav-icon fa fa-list"></span>
+                        <span class="nav-text">CATEGORY</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">
+                        <span class="nav-icon fa fa-contact-card"></span>
+                        <span class="nav-text">CONTACT</span>
+                    </a>
+                </li>
+            </ul>
+        </header>
+
+        <main>
+            <div class="container">
+                <h2 class="title">Product List</h2>
+                <div class="row">
+                    <div class="col" onclick="buy('baju lebaran', 100000)">
+                        <img src="assets/images/product-1.jpg" alt="">
+                        <h4>T-shirt 1</h4>
+                        <p>Rp. 100.000,00</p>
+                    </div>
+                    <div class="col" onclick="buy('sepatu jumatan', 150000)"">
+                        <img src="assets/images/product-2.jpg" alt="">
+                        <h4>Shoe School</h4>
+                        <p>Rp. 150.000,00</p>
+                    </div>
+                    <div class="col" onclick="buy('celana tahun baru', 200000)">
+                        <img src="assets/images/product-3.jpg" alt="">
+                        <h4>Sweatpants 1</h4>
+                        <p>Rp. 60.000,00</p>
+                    </div>
+                    <div class="col" onclick="buy('baju anak', 160000)">
+                        <img src="assets/images/product-4.jpg" alt="">
+                        <h4>T-shirt 2</h4>
+                        <p>Rp. 100.000,00</p>
+                    </div>
+                    <div class="col" onclick="buy('baju bapak', 180000)">
+                        <img src="assets/images/product-5.jpg" alt="">
+                        <h4>sneaker</h4>
+                        <p>Rp. 200.000,00</p>
+                    </div>
+                    <div class="col" onclick="buy('baju ibu', 170000)">
+                        <img src="assets/images/product-6.jpg" alt="">
+                        <h4>T-shirt 3</h4>
+                        <p>Rp. 100.000,00</p>
+                    </div>
+                    <div class="col" onclick="buy('baju teteh', 130000)">
+                        <img src="assets/images/product-7.jpg" alt="">
+                        <h4>Sock</h4>
+                        <p>Rp. 20.000,00</p>
+                    </div>
+                    <div class="col" onclick="buy('baju om', 120000)">
+                        <img src="assets/images/product-8.jpg" alt="">
+                        <h4>Watch</h4>
+                        <p>Rp. 300.000,00</p>
+                    </div>
+                    <div class="col" onclick="buy('baju paman', 110000)">
+                        <img src="assets/images/product-9.jpg" alt="">
+                        <h4>Watch</h4>
+                        <p>Rp. 250.000,00</p>
+                    </div>
+                    <div class="col" onclick="buy('baju paman', 110000)">
+                        <img src="assets/images/product-10.jpg" alt="">
+                        <h4>Sport Shoes 1</h4>
+                        <p>Rp. 150.000,00</p>
+                    </div>
+                    <div class="col" onclick="buy('baju paman', 110000)">
+                        <img src="assets/images/product-11.jpg" alt="">
+                        <h4>Sport Shoes 2</h4>
+                        <p>Rp. 200.000,00</p>
+                    </div>
+                    <div class="col" onclick="buy('baju paman', 110000)">
+                        <img src="assets/images/product-12.jpg" alt="">
+                        <h4>Sweatpants 2</h4>
+                        <p>Rp. 70.000,00</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="contact" id="contact">
+                <div class="description-1">
+                    <div class="about-me">
+                        <h3>Tokodia</h3>
+                        <ul>
+                            <li>Tentang Tokodia</li>
+                            <li>Tahun Berdirinya TokoDia</li>
+                            <li>Dll</li>
+                        </ul>
+                    </div>
+                    <div class="purchase">
+                        <h3>Pembelian</h3>
+                        <ul>
+                            <li>Tagihan & Top Up</li>
+                            <li>Tokodia COD</li>
+                            <li>Dll</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="description-2">
+                    <div class="sale">
+                        <h3>Penjualan</h3>
+                        <ul>
+                            <li>Daftar Official Store</li>
+                            <li>Pusat Bantuan Seller</li>
+                            <li>Dll</li>
+                        </ul>
+                    </div>
+                    <div class="help-guide">
+                        <h3>Bantuan dan Panduan</h3>
+                        <ul>
+                            <li>Tokodia Care</li>
+                            <li>Syarat dan Ketentuan</li>
+                            <li>Kebijakan Privasi</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="description-3">
+                    <div class="payment">
+                        <h3>Pembayaran</h3>
+                        <ul class="icon">
+                            <li><img src="assets/images/anteraja.png" alt=""></li>
+                            <li><img src="assets/images/jne.png" alt=""></li>
+                            <li><img src="assets/images/jnt.png" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="follow-me">
+                        <h3>Follow Me</h3>
+                        <ul class="icon">
+                            <li><span class="fa-brands fa-discord"></span></li>
+                            <li><a href="https://www.instagram.com/barategarr" target="_blank" class="fa-brands fa-square-instagram"></a></li>
+                            <li><span class="fa-brands fa-square-whatsapp" onclick="chat()"></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <img src="assets/images/banner-preview.png" alt="">
+                    <p>Copyright <span id="year"></span>. CUYSHOP</p>
+                </div>
+            </div>
+        </footer>
+
+        <script src="../assets/source.js"></script>
+    </body>
+</html>
